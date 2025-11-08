@@ -1,0 +1,26 @@
+{
+  "geo_chosen": {
+    "model": "Hierarchical",
+    "algorithm": "Hierarchical",
+    "params": {
+      "n_clusters": 3
+    },
+    "clusters": 3,
+    "silhouette": 0.4138955488471472,
+    "davies_bouldin": 0.9376471202968574,
+    "calinski_harabasz": 5205.717859207715,
+    "inertia": NaN
+  },
+  "temp_chosen": {
+    "model": "KMeans_k5",
+    "algorithm": "KMeans",
+    "params": {
+      "k": 5
+    },
+    "clusters": 5,
+    "silhouette": 0.26568811789320634,
+    "davies_bouldin": 1.0603495733116848,
+    "calinski_harabasz": 19353.060550781054,
+    "inertia": 58860.8706901741
+  }
+}

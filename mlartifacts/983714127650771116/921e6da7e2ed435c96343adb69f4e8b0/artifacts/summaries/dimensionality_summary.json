@@ -1,0 +1,10 @@
+{
+  "explained_variance": 0.43871277584895185,
+  "top_features": [
+    "IsWeekend",
+    "Weekday",
+    "CrimeLabel",
+    "Severity",
+    "TimeLabel"
+  ]
+}

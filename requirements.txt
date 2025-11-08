@@ -1,0 +1,15 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+plotly
+folium
+geopandas
+mlflow
+streamlit
+umap-learn
+scipy
+joblib
+pyyaml
+hdbscan

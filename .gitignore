@@ -1,0 +1,33 @@
+# ====== Python ======
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+*.log
+*.sqlite3
+
+# ====== Data ======
+
+models/
+mlruns/
+outputs/
+
+# ====== Virtual environment ======
+hdbscan_env/
+venv/
+.env/
+*.env
+
+# ====== Streamlit / Logs ======
+.streamlit/secrets.toml
+logs/
+.env
+.DS_Store
+
+# ====== IDEs ======
+.vscode/
+.idea/
+*.swp
