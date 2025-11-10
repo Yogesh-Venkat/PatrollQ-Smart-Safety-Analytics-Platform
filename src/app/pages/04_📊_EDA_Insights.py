@@ -14,7 +14,8 @@ import base64
 
 # Paths
 BASE_DIR = Path(__file__).resolve().parents[3]
-DATA_PATH = BASE_DIR / "data" / "processed" / "sample_500000_rows.csv"
+DATA_PATH_01 = BASE_DIR / "data" / "processed" / "sample_250000_rows_01.csv"
+DATA_PATH_02 = BASE_DIR / "data" / "processed" / "sample_250000_rows_02.csv"
 FIG_DIR = BASE_DIR / "reports" / "figures"
 SUM_DIR = BASE_DIR / "reports" / "summaries"
 
@@ -33,8 +34,10 @@ def load_summary_csv(filename):
 
 @st.cache_data
 def load_data():
-    if DATA_PATH.exists():
-        df = pd.read_csv(DATA_PATH)
+    if DATA_PATH_01.exists():
+        df_01 = pd.read_csv(DATA_PATH_01, low_memory=False)
+        df_02 = pd.read_csv(DATA_PATH_02, low_memory=False)
+        df = pd.concat([df_01, df_02], ignore_index=True)
         df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
         return df
     return None

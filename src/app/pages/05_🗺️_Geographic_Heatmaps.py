@@ -13,7 +13,8 @@ import joblib
 
 # Paths
 BASE_DIR = Path(__file__).resolve().parents[3]
-DATA_PATH = BASE_DIR / "data" / "processed" / "sample_500000_rows.csv"
+DATA_PATH_01 = BASE_DIR / "data" / "processed" / "sample_250000_rows_01.csv"
+DATA_PATH_02 = BASE_DIR / "data" / "processed" / "sample_250000_rows_02.csv"
 KMEANS_MODEL = BASE_DIR / "models" / "clustering" / "kmeans_geo_k9.pkl"
 CENTERS_PATH = BASE_DIR / "reports" / "summaries" / "kmeans_geo_centers_k9.csv"
 
@@ -25,7 +26,9 @@ st.markdown("Explore crime density across Chicago with interactive maps and clus
 # Cache data loading
 @st.cache_data
 def load_data():
-    df = pd.read_csv(DATA_PATH)
+    df_01 = pd.read_csv(DATA_PATH_01, low_memory=False)
+    df_02 = pd.read_csv(DATA_PATH_02, low_memory=False)
+    df = pd.concat([df_01, df_02], ignore_index=True)
     df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
     df = df.dropna(subset=['Latitude', 'Longitude', 'Date'])
     return df
