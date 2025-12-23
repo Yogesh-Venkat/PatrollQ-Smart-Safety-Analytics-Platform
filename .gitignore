@@ -8,6 +8,15 @@ __pycache__/
 *.egg
 *.log
 *.sqlite3
+# Large generated embeddings
+reports/summaries/*embeddings*.csv
+reports/summaries/*full_cluster*.csv
+reports/summaries/*sample_cluster_labels*.csv
+
+# MLflow & DB artifacts
+mlartifacts/
+mlruns/
+*.db
 
 # ====== Data ======
 
