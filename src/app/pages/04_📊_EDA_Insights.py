@@ -38,13 +38,29 @@ def load_summary_csv(filename):
 
 @st.cache_data
 def load_data():
-    if DATA_PATH_01.exists():
+    try:
+        st.write("🔍 Reading:", DATA_PATH_01)
         df_01 = pd.read_csv(DATA_PATH_01, low_memory=False)
+
+        st.write("🔍 Reading:", DATA_PATH_02)
         df_02 = pd.read_csv(DATA_PATH_02, low_memory=False)
+
         df = pd.concat([df_01, df_02], ignore_index=True)
-        df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
+
+        st.write("📌 Columns:", df.columns.tolist())
+
+        if 'Date' in df.columns:
+            df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
+        else:
+            st.error("❌ 'Date' column not found")
+
         return df
-    return None
+
+    except Exception as e:
+        st.error("🔥 Error while loading data")
+        st.exception(e)
+        return None
+
 
 def display_image(image_path):
     if image_path.exists():
