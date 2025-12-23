@@ -23,10 +23,7 @@ st.set_page_config(page_title="EDA Insights", page_icon="📊", layout="wide")
 
 st.title("📊 Exploratory Data Analysis (EDA) Insights")
 st.markdown("Comprehensive statistical analysis and visual exploration of Chicago crime data")
-st.write("File location:", __file__)
-st.write("Resolved BASE_DIR:", BASE_DIR)
-st.write("CSV 01 exists:", DATA_PATH_01.exists())
-st.write("CSV 02 exists:", DATA_PATH_02.exists())
+
 
 # Helper functions
 @st.cache_data
@@ -39,16 +36,9 @@ def load_summary_csv(filename):
 @st.cache_data
 def load_data():
     try:
-        st.write("🔍 Reading:", DATA_PATH_01)
         df_01 = pd.read_csv(DATA_PATH_01, low_memory=False)
-
-        st.write("🔍 Reading:", DATA_PATH_02)
         df_02 = pd.read_csv(DATA_PATH_02, low_memory=False)
-
         df = pd.concat([df_01, df_02], ignore_index=True)
-
-        st.write("📌 Columns:", df.columns.tolist())
-
         if 'Date' in df.columns:
             df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
         else:
