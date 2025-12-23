@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f5cebacffaa7d4a553182589bb095c6834f6161e3ceb92072a6dce77a7a1514e
-size 2638
+model,algorithm,params,clusters,silhouette,davies_bouldin,calinski_harabasz,inertia
+KMeans_k5,KMeans,{'k': 5},5,0.399637861435042,0.83313622523529,53541.839745647,18925.940308924168
+KMeans_k6,KMeans,{'k': 6},6,0.3951644516353232,0.8323390819800299,55232.36324413882,15328.406099348946
+KMeans_k7,KMeans,{'k': 7},7,0.39288455916562004,0.8370124403093829,56196.420172206956,12912.598899448081
+KMeans_k8,KMeans,{'k': 8},8,0.4030736023278747,0.7959462883042195,57634.67381590778,11025.395809441325
+KMeans_k9,KMeans,{'k': 9},9,0.4114808804455951,0.7731759935156165,58077.39303739999,9714.56946804214
+KMeans_k10,KMeans,{'k': 10},10,0.4076866757108756,0.7868692634344019,59717.552188363894,8509.74699818364
+DBSCAN,DBSCAN,"{'eps': 0.2, 'min_samples': 5}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 0.2, 'min_samples': 10}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 0.2, 'min_samples': 20}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 0.2, 'min_samples': 50}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 0.4, 'min_samples': 5}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 0.4, 'min_samples': 10}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 0.4, 'min_samples': 20}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 0.4, 'min_samples': 50}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 0.6, 'min_samples': 5}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 0.6, 'min_samples': 10}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 0.6, 'min_samples': 20}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 0.6, 'min_samples': 50}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 0.8, 'min_samples': 5}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 0.8, 'min_samples': 10}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 0.8, 'min_samples': 20}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 0.8, 'min_samples': 50}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 1.0, 'min_samples': 5}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 1.0, 'min_samples': 10}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 1.0, 'min_samples': 20}",1,,,,
+DBSCAN,DBSCAN,"{'eps': 1.0, 'min_samples': 50}",1,,,,
+Hierarchical,Hierarchical,{'n_clusters': 3},3,0.4138955488471472,0.9376471202968574,5205.717859207715,
+Hierarchical,Hierarchical,{'n_clusters': 4},4,0.37262557337223834,0.838897735345561,4536.232993137512,
+Hierarchical,Hierarchical,{'n_clusters': 5},5,0.34557375217274144,0.8419408661587374,4270.722735558527,
+Hierarchical,Hierarchical,{'n_clusters': 6},6,0.3195865819731026,0.8456503209163309,4266.698730754194,
+Hierarchical,Hierarchical,{'n_clusters': 7},7,0.32510754692766786,0.8134675531140018,4424.83572444319,
+Hierarchical,Hierarchical,{'n_clusters': 8},8,0.34806725731415544,0.847049773956108,4759.906501133894,
+Hierarchical,Hierarchical,{'n_clusters': 9},9,0.35526784578352155,0.8345283250317546,4882.672548896518,
+Hierarchical,Hierarchical,{'n_clusters': 10},10,0.3521404371883848,0.8608690111051427,4921.6081056915655,

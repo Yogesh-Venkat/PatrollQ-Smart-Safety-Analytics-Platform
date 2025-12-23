@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7e21857192a2047f909d24e6fbfcf8ac81843984802a18bfc96df3a98c316a41
-size 487
+{
+    "records": 4,
+    "columns": 1,
+    "missing_values": {},
+    "duplicates": 0
+}

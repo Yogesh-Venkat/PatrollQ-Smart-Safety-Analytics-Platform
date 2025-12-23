@@ -1,25 +1,13 @@
 🔍 Starting Data Quality Validation
 ------------------------------------------------------------
-✅ Loaded dataset: 500,000 records, 27 columns
+✅ Loaded dataset: 4 records, 1 columns
 
 ✅ No missing values detected
 
 📦 Duplicate rows: 0
 
 🧱 Data types summary:
-{'ID': 'int64', 'Case Number': 'object', 'Date': 'object', 'Block': 'object', 'IUCR': 'object', 'Primary Type': 'object', 'Description': 'object', 'Location Description': 'object', 'Arrest': 'bool', 'Domestic': 'bool', 'Beat': 'int64', 'District': 'float64', 'Ward': 'float64', 'Community Area': 'float64', 'FBI Code': 'object', 'X Coordinate': 'float64', 'Y Coordinate': 'float64', 'Year': 'int64', 'Updated On': 'object', 'Latitude': 'float64', 'Longitude': 'float64', 'Location': 'object', 'Month': 'int64', 'Day': 'int64', 'Weekday': 'int64', 'Hour': 'int64', 'Minute': 'int64'}
-
-⏰ Future dates found: 0
-📅 Date range: 2010-01-01 00:00:00 → 2025-10-17 00:00:00
-Year range: 2010 → 2025
-
-🗺️ Out-of-bound coordinates: 0
-🚫 Invalid crime categories: 1
-Hour range: 0 → 23
-Month range: 1 → 12
-Day range: 1 → 31
-
-⚠️ Arrests without Case Number: 0
+{'version https://git-lfs.github.com/spec/v1': 'object'}
 
 ✅ Data quality validation completed successfully!
 ------------------------------------------------------------

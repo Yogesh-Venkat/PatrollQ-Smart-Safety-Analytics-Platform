@@ -20,7 +20,8 @@ hdbscan_env/
 venv/
 .env/
 *.env
-
+data/raw/Crimes_-_2001_to_Present_20251025.csv
+data/processed/sample_500000_rows.csv
 # ====== Streamlit / Logs ======
 .streamlit/secrets.toml
 logs/

@@ -1,3 +1,75 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fbef3c50db98e680c313ff7c205eb22e47e338a9f66cee399c20e296679d9412
-size 1789
+{
+  "total_features": 15,
+  "feature_list": [
+    "Month",
+    "Day",
+    "Hour",
+    "Weekday",
+    "IsWeekend",
+    "CrimeLabel",
+    "LocationLabel",
+    "SeasonLabel",
+    "TimeLabel",
+    "Severity",
+    "GeoCluster",
+    "LatBin",
+    "LonBin",
+    "LatNorm",
+    "LonNorm"
+  ],
+  "pca_2_components": {
+    "explained_variance": 0.33509134746142566,
+    "component_1_variance": 0.20759036317421617,
+    "component_2_variance": 0.12750098428720952
+  },
+  "pca_3_components": {
+    "explained_variance": 0.44960784453732466,
+    "component_1_variance": 0.20759036317421617,
+    "component_2_variance": 0.12750098428720952,
+    "component_3_variance": 0.11451649707589899
+  },
+  "components_for_70_percent": 6,
+  "components_for_80_percent": 7,
+  "top_5_features": [
+    "IsWeekend",
+    "Weekday",
+    "TimeLabel",
+    "Hour",
+    "CrimeLabel"
+  ],
+  "top_10_features": [
+    "IsWeekend",
+    "Weekday",
+    "TimeLabel",
+    "Hour",
+    "CrimeLabel",
+    "Severity",
+    "LonBin",
+    "LonNorm",
+    "LatBin",
+    "LatNorm"
+  ],
+  "feature_importance_scores": {
+    "IsWeekend": 0.9931026875183087,
+    "Weekday": 0.9916955138667003,
+    "TimeLabel": 0.72861946998326,
+    "Hour": 0.7071357804788592,
+    "CrimeLabel": 0.7069827039892438,
+    "Severity": 0.7057601752394244,
+    "LonBin": 0.6511320696922789,
+    "LonNorm": 0.6478281282137519,
+    "LatBin": 0.5479544409941177,
+    "LatNorm": 0.54710184002377
+  },
+  "tsne_sampled": true,
+  "tsne_sample_size": 10000,
+  "visualizations_created": [
+    "pca_scree_plot.png",
+    "feature_importance_bar.png",
+    "pca_2d_crime_type.html",
+    "pca_2d_time_period.html",
+    "pca_2d_static.png",
+    "tsne_2d_crime_type.html",
+    "tsne_2d_time_period.html"
+  ]
+}

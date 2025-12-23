@@ -1,3 +1,58 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b82c2234418ab0a24b12b0e411eaeaa48882a0312320f216a776c0981da21b23
-size 1193
+{
+  "k": 5,
+  "silhouette": 0.26798300914767037,
+  "davies_bouldin": 1.0916368048352294,
+  "peak_hours": [
+    0.0,
+    12.0,
+    15.0,
+    18.0,
+    19.0
+  ],
+  "peak_hours_counts": [
+    26163,
+    26724,
+    25526,
+    25734,
+    26118
+  ],
+  "peak_months": [
+    6.0,
+    7.0,
+    8.0
+  ],
+  "peak_months_counts": [
+    44267,
+    46062,
+    45753
+  ],
+  "pattern_names": {
+    "0": "Off-Peak Pattern",
+    "1": "Off-Peak Pattern",
+    "2": "Off-Peak Pattern",
+    "3": "Daytime Activity",
+    "4": "Daytime Activity"
+  },
+  "pattern_descriptions": {
+    "0": "Lower-activity time periods",
+    "1": "Lower-activity time periods",
+    "2": "Lower-activity time periods",
+    "3": "Mid-day crimes during business hours",
+    "4": "Mid-day crimes during business hours"
+  },
+  "weekday_weekend_stats": {
+    "weekday_total": 358124,
+    "weekend_total": 141876,
+    "weekday_avg_per_day": 71624.8,
+    "weekend_avg_per_day": 70938.0,
+    "weekday_peak_hour": 12,
+    "weekend_peak_hour": 0
+  },
+  "seasonal_summary": {
+    "Fall": 123533,
+    "Spring": 126637,
+    "Summer": 136082,
+    "Winter": 113748
+  },
+  "danger_analysis": {}
+}

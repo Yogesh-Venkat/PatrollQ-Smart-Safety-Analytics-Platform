@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e7715fff0d9ed50fc19ae852a562e03e1baaa857461b95f8a7045b163f2df783
-size 319
+{
+  "kmeans": {
+    "silhouette": 0.41236746213478614,
+    "davies_bouldin": 0.7722351182460243
+  },
+  "dbscan": {
+    "silhouette": 0.8948656437260208,
+    "davies_bouldin": 0.15284711091059616
+  },
+  "hierarchical": {
+    "silhouette": -0.010356280083700816,
+    "davies_bouldin": 15.61216524646282
+  }
+}
